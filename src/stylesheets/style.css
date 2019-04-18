@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+.main-container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  font-size: 1.5em;
+  font-family: "Bubblegum Sans", cursive, sans-serif;
+}
+.children {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex: 1;
+  font-size: 1.5rem;
+  color: #fd0707;
+  transition: font-size 0.7s cubic-bezier(0.61, -0.19, 0.7, -0.11),
+    flex 0.7s cubic-bezier(0.61, -0.19, 0.7, -0.11), background 0.2s;
+}
+.child {
+  display: flex;
+  flex: 1 0 auto;
+  justify-content: center;
+  align-items: center;
+  transition: 0.7s ease-in-out;
+}
+.child:nth-child(2) {
+  font-size: 3em;
+}
+.child:nth-child(1) {
+  transform: translateY(-100%);
+}
+.child:nth-child(3) {
+  transform: translateY(100%);
+}
+.children.clicked {
+  flex-grow: 5;
+  font-size: 2em;
+}
+.children.clicked-active .child:nth-child(1),
+.children.clicked-active .child:nth-child(3) {
+  transform: translateY(0);
+}
+
+#child1 {
+  background-image: url(https://images.pexels.com/photos/45242/wolf-torque-wolf-moon-cloud-45242.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+#child2 {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url(https://images.pexels.com/photos/1236701/pexels-photo-1236701.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+}
+#child3 {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url(https://images.pexels.com/photos/1624496/pexels-photo-1624496.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+}
+#child4 {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url(https://images.pexels.com/photos/1366957/pexels-photo-1366957.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+}
+#child5 {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url(https://images.pexels.com/photos/132037/pexels-photo-132037.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+}
